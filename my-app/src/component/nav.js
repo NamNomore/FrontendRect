@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from "react-router-dom";
 class nav extends Component {
     render() {
         return (
@@ -13,13 +13,14 @@ class nav extends Component {
                     <div className="collapse navbar-collapse justify-content-center" id="collapsibleNavId">
                         <ul className="nav ml-auto mt-2 mt-lg-0 ">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                            <Link to="/home"><a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a></Link>
+                            
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
+                            <Link to="/register"><a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a></Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link</a>
+                            <Link to="/"><a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a></Link>
                         </li>
                         </ul>
                     </div>
